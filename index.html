@@ -33,66 +33,94 @@
 <body>
 
 <h1>Política de Privacidad</h1>
-<p class="meta">Última actualización: 26 de octubre de 2026 · Aplica a la app Bolsín para iPhone (iOS) y Android</p>
+<p class="meta">Última actualización: 28 de octubre de 2026 · Aplica a la app Bolsín para iPhone (iOS) y Android</p>
 
-<p>Esta política explica qué datos recoge la app Bolsín (en adelante, "la App"), con qué finalidad, y qué derechos tienes sobre ellos.</p>
+<p>Esta política explica qué datos trata Bolsín (en adelante, «la App»), de dónde salen, para qué los usamos, con qué base legal, a quién se comunican, cuánto tiempo los guardamos y qué derechos tienes. El apartado 5 está dirigido también a las personas que aparecen en los listados oficiales de interinos aunque no usen la App.</p>
 
 <h2>1. Responsable del tratamiento</h2>
-<p>Pulchra Dev, con contacto en <a href="mailto:pulchradev@gmail.com">pulchradev@gmail.com</a>, es responsable del tratamiento de los datos personales recogidos a través de la App.</p>
+<p>Pulchra Dev es responsable del tratamiento de los datos. Contacto para cualquier asunto de privacidad: <a href="mailto:pulchradev@gmail.com">pulchradev@gmail.com</a>.</p>
+<p>Bolsín es una aplicación independiente, sin vinculación con la Junta de Castilla y León ni con ninguna otra administración.</p>
 
-<h2>2. Qué datos recogemos</h2>
+<h2>2. Qué datos tratamos de quien usa la App</h2>
 <ul>
-  <li><strong>NIF/NIE</strong>: necesario para consultar tu posición en las listas oficiales de interinos. Se almacena cifrado en reposo (AES-GCM) y nunca se incluye en registros (logs) del sistema.</li>
-  <li><strong>Especialidades, cuerpo y provincia seguidos</strong>: para saber qué listas monitorizar por ti.</li>
-  <li><strong>Historial de posición</strong>: serie temporal de tu posición en cada lista, para mostrarte la evolución.</li>
-  <li><strong>Identificador de tu cuenta de Apple (Sign in with Apple) o de Google (Iniciar sesión con Google)</strong>: para gestionar tu cuenta sin necesidad de contraseña propia. Si unes las dos, guardamos ambos identificadores para que veas los mismos datos en iPhone y en Android.</li>
-  <li><strong>Email</strong> (opcional en iPhone, si lo compartes a través de Sign in with Apple; en Android lo facilita Google al iniciar sesión).</li>
-  <li><strong>Token de dispositivo (APNs en iPhone, Firebase Cloud Messaging en Android)</strong>: para poder enviarte notificaciones push.</li>
-  <li><strong>Preguntas al Asistente</strong> (solo si lo usas): el texto de tus preguntas y las respuestas, después de quitar automáticamente NIF/NIE, correos, teléfonos, IBAN y números de tarjeta. Se guardan asociadas a tu cuenta, junto con el consumo y el coste de cada respuesta, para aplicar el límite de uso diario, medir costes y mejorar las fichas. Puedes borrarlas cuando quieras desde Ajustes.</li>
-  <li><strong>Datos de suscripción</strong>: estado de tus suscripciones (Premium y Asistente), gestionado por Apple (App Store) o por Google (Google Play) — nosotros solo recibimos la confirmación de estado, nunca datos de pago.</li>
+  <li><strong>Tu NIF/NIE</strong>: imprescindible para consultar tu posición en las listas. Se guarda cifrado (Fernet: AES-128 con autenticación HMAC-SHA256); para buscarlo solo se usa una huella con clave, y nunca se escribe en los registros del sistema.</li>
+  <li><strong>Tu nombre y apellidos tal como los devuelve la consulta oficial</strong>: para reconocerte en los listados que publica la Junta y avisarte cuando sale tu adjudicación. No te los pedimos: llegan con la consulta de tu NIF.</li>
+  <li><strong>Especialidades, cuerpo y provincias</strong> que sigues.</li>
+  <li><strong>Historial de posición</strong>: tu posición en cada lista a lo largo del tiempo.</li>
+  <li><strong>Identificador de tu cuenta de Apple o de Google</strong> con el que inicias sesión, y tu <strong>correo electrónico</strong> si Apple o Google nos lo facilitan.</li>
+  <li><strong>Token de dispositivo</strong> (APNs en iPhone, Firebase Cloud Messaging en Android), para enviarte avisos si los activas.</li>
+  <li><strong>Preguntas al Asistente</strong>, solo si lo usas: el texto de tus preguntas y las respuestas, después de quitar automáticamente NIF/NIE, correos, teléfonos, IBAN y números de tarjeta, con el consumo y el coste de cada respuesta.</li>
+  <li><strong>Estado de tus suscripciones</strong> (Premium y Asistente), que gestionan Apple o Google. Nunca recibimos datos de pago.</li>
+  <li><strong>Registros técnicos del servidor</strong>: dirección IP, fecha y ruta de cada petición, para la seguridad y el funcionamiento del servicio.</li>
 </ul>
-<p>No recogemos datos de geolocalización, ni accedemos a tus contactos, fotos o cualquier otro dato del dispositivo no listado arriba.</p>
+<p>Facilitar el NIF es necesario para usar la App: sin él no podemos consultar tu posición. El correo y los avisos son opcionales. No recogemos tu ubicación ni accedemos a tus contactos, fotos ni a ningún otro dato del dispositivo.</p>
 
-<h2>3. Perfiles de terceros (función multi-perfil)</h2>
-<p>La App permite añadir el NIF de otra persona (por ejemplo, un familiar) para seguir su posición en las listas. Al hacerlo, declaras contar con su consentimiento para introducir su dato y recibir notificaciones sobre su situación. El responsable de obtener ese consentimiento es la persona usuaria de la App, no nosotros.</p>
+<h2>3. Solo tu propio NIF</h2>
+<p>La App sigue únicamente el NIF de la persona que la usa. Al darlo de alta declaras que es tuyo, y cada cuenta puede tener un único NIF; el servidor rechaza cualquier intento de añadir otro. No está permitido usar la App para consultar el NIF de otra persona.</p>
+<p>Las versiones anteriores permitían seguir un segundo NIF con una declaración de consentimiento de su titular. Hemos retirado esa función y hemos eliminado esos perfiles con todos sus datos.</p>
 
-<h2>4. Base legal del tratamiento</h2>
+<h2>4. Para qué usamos tus datos y con qué base legal</h2>
 <ul>
-  <li>Ejecución del servicio que nos solicitas (consultar tu posición y notificarte cambios): tratamos tu NIF y especialidades porque es imprescindible para prestarte el servicio que pides.</li>
-  <li>Consentimiento: para perfiles de terceros y para el envío de notificaciones push.</li>
+  <li><strong>Prestarte el servicio que pides</strong> (consultar tu posición, mostrarte su evolución, avisarte de cambios y de tus adjudicaciones, calcular las estimaciones orientativas y responder al Asistente): ejecución del contrato que aceptas al usar la App (art. 6.1.b del RGPD).</li>
+  <li><strong>Avisos en el móvil</strong>: tu consentimiento (art. 6.1.a), que das al activarlos y puedes retirar en cualquier momento desde los ajustes de la App o del teléfono.</li>
+  <li><strong>Seguridad del servicio, prevención de abusos y control de costes</strong> (registros técnicos, límites de uso del Asistente): nuestro interés legítimo en proteger el servicio (art. 6.1.f).</li>
+  <li><strong>Anuncios no personalizados</strong> en la versión gratuita: ver el apartado 7.</li>
 </ul>
+<p>Las estimaciones de la App («cuándo te pueden llamar», «dónde salen las plazas») son cálculos orientativos. No tomamos decisiones automatizadas que produzcan efectos jurídicos sobre ti ni te afecten de forma significativa (art. 22 del RGPD).</p>
 
-<h2>5. Origen de los datos consultados</h2>
-<p>Los datos de posición en listas proceden de fuentes públicas oficiales de las administraciones autonómicas correspondientes (por ejemplo, la Junta de Castilla y León), de acceso abierto y reutilización permitida conforme a la Ley 37/2007. No accedemos a ningún sistema privado ni usamos credenciales de terceros para obtenerlos.</p>
-
-<h2>6. Con quién compartimos datos</h2>
+<h2>5. Datos de los listados oficiales (también de personas que no usan la App)</h2>
+<p>La Consejería de Educación de la Junta de Castilla y León publica los listados de baremo de las listas de interinos y las resoluciones de adjudicación de inicio de curso y semanales. De esas publicaciones guardamos, para cada persona que aparece en ellas:</p>
 <ul>
-  <li><strong>Apple</strong>: para autenticación (Sign in with Apple), notificaciones push (APNs) y gestión de suscripciones (App Store), conforme a sus propias políticas de privacidad.</li>
-  <li><strong>Google</strong>: para autenticación (Iniciar sesión con Google), notificaciones push en Android (Firebase Cloud Messaging) y gestión de suscripciones (Google Play), conforme a sus propias políticas de privacidad.</li>
-  <li><strong>Google AdMob</strong>: para mostrar anuncios en la versión gratuita. Usamos anuncios <strong>no personalizados</strong> — no se comparte tu NIF ni ningún dato identificativo con AdMob, y no se realiza seguimiento entre apps (no se solicita permiso de seguimiento/ATT porque no lo necesitamos). En Android, el SDK de AdMob puede usar el identificador de publicidad del dispositivo para limitar la frecuencia de los anuncios, medir su rendimiento y prevenir el fraude.</li>
-  <li><strong>Proveedor de inteligencia artificial (Asistente)</strong>: para redactar la respuesta enviamos tu pregunta, ya sin identificadores, y las fichas informativas relacionadas a <strong>Scaleway</strong> (Scaleway SAS, empresa francesa), con servidores en <strong>París (Francia, Unión Europea)</strong>. No enviamos tu NIF, tu nombre, tu correo ni tu posición en las listas. Te pedimos que no escribas datos personales en tus preguntas y los quitamos automáticamente cuando los detectamos.</li>
-  <li><strong>Herramienta interna de documentación (Asistente)</strong>: las preguntas que el Asistente no ha sabido contestar o que has marcado como incorrectas se copian, ya sin identificadores y sin ningún dato tuyo, a nuestro espacio de <strong>Atlassian Confluence</strong> (Atlassian), donde revisamos y escribimos las fichas informativas. Se conservan allí como máximo 90 días y, si borras tus preguntas, se quitan también de ahí en unas horas.</li>
-  <li><strong>Proveedor de alojamiento (hosting)</strong>: <a href="https://www.hetzner.com" target="_blank" rel="noopener">Hetzner</a> (VPS en la UE), donde se aloja el backend que consulta las listas oficiales y envía las notificaciones.</li>
+  <li>El DNI enmascarado tal como lo publica la Junta (solo cuatro de sus cifras).</li>
+  <li>Una <strong>huella cifrada del nombre</strong>, nunca el nombre. Sirve para relacionar las filas de una misma persona y no permite leer el nombre.</li>
+  <li>La puntuación del baremo, el orden en la lista, las exclusiones y, en su caso, la vacante adjudicada (centro, localidad y provincia).</li>
 </ul>
-<p>No vendemos ni cedemos tus datos a terceros con fines comerciales.</p>
+<p><strong>Finalidad</strong>: calcular, a partir de los datos de cursos pasados, estadísticas y estimaciones orientativas para quien usa la App, y avisar a cada usuario cuando aparece su propia adjudicación. No los usamos para ningún otro fin. La App nunca muestra a nadie los datos de otra persona concreta: solo enseña a cada usuario su propia información y cifras agregadas.</p>
+<p><strong>Base legal</strong>: interés legítimo (art. 6.1.f del RGPD), el nuestro y el de los propios interinos que usan la App en conocer y entender su situación en las listas. Hemos ponderado que la Administración publica estos datos precisamente para que los interesados conozcan su posición y la de las listas; que los usamos para esa misma finalidad; que guardamos solo lo imprescindible, sin nombres y con el DNI enmascarado; que no los mostramos ni comunicamos a terceros; que los conservamos durante un plazo limitado; y que cualquier persona puede oponerse.</p>
+<p><strong>Conservación</strong>: los seis últimos cursos, que es la serie que usamos para las estimaciones. Lo más antiguo se borra automáticamente.</p>
+<p><strong>Origen</strong>: publicaciones oficiales de acceso público de la Junta de Castilla y León. Las reutilizamos conforme a sus condiciones generales de reutilización: citamos la fuente y la fecha, no alteramos el sentido de los datos y no damos a entender que la Junta participe en la App o la respalde.</p>
+<p><strong>Información y derechos</strong>: como no tenemos datos de contacto de estas personas ni guardamos sus nombres, no podemos informarles una a una (art. 14.5.b del RGPD); por eso publicamos esta información aquí. Si apareces en esos listados puedes oponerte a este tratamiento o pedir la supresión de tus datos escribiendo a <a href="mailto:pulchradev@gmail.com">pulchradev@gmail.com</a>. Para localizar tus filas necesitaremos tu nombre y tu DNI, que usaremos solo para atender tu petición y no conservaremos después.</p>
 
-<h2>7. Cuánto tiempo conservamos tus datos</h2>
-<p>Conservamos tu historial de posiciones mientras mantengas tu cuenta activa. Los usuarios de la versión gratuita pueden ver los últimos 30 días de historial en la App, aunque el dato completo se conserva igual para el caso de que actives Premium. Puedes borrar tu cuenta y todos tus datos en cualquier momento desde Ajustes → Privacidad → Borrar todos mis datos. Los perfiles borrados se conservan congelados 30 días por si vuelves a añadir el mismo NIF y después se eliminan del servidor. Tienes los pasos detallados, también para hacerlo sin la app, en <a href="https://pulchradev.github.io/bolsin-privacidad/eliminar-cuenta/">Borrar tu cuenta de Bolsín</a>.</p>
-<p>Las preguntas al Asistente y sus respuestas se conservan hasta que las borres desde Ajustes → Asistente o borres tus datos. Al borrarlas eliminamos el texto de las preguntas y de las respuestas; conservamos únicamente contadores sin contenido (fecha, número de palabras procesadas y coste) para aplicar el límite diario y calcular costes.</p>
+<h2>6. Origen de los datos de posición</h2>
+<p>Tu posición en las listas procede de la consulta pública por NIF que ofrece la Junta de Castilla y León (CLIS) y de los listados que publica. No accedemos a ningún sistema privado ni usamos credenciales de nadie.</p>
 
-<h2>8. Tus derechos</h2>
-<p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad escribiendo a <a href="mailto:pulchradev@gmail.com">pulchradev@gmail.com</a>. También puedes borrar tu cuenta directamente desde la App en cualquier momento, sin necesidad de contactarnos. Si consideras que no hemos atendido tu solicitud correctamente, puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener">aepd.es</a>).</p>
+<h2>7. Quién trata datos por nuestra cuenta y a quién se comunican</h2>
+<ul>
+  <li><strong>Hetzner Online GmbH</strong> (alojamiento): el servidor de la App está en la Unión Europea.</li>
+  <li><strong>Apple</strong> y <strong>Google</strong>: inicio de sesión, envío de avisos (APNs y Firebase Cloud Messaging) y gestión de suscripciones (App Store y Google Play), conforme a sus propias políticas de privacidad.</li>
+  <li><strong>Google AdMob</strong>: anuncios <strong>no personalizados</strong> en la versión gratuita. No compartimos con AdMob tu NIF ni ningún dato identificativo, y no hacemos seguimiento entre apps. En Android, el SDK de AdMob puede usar el identificador de publicidad del dispositivo para limitar la frecuencia de los anuncios, medir su rendimiento y prevenir el fraude.</li>
+  <li><strong>Scaleway SAS</strong> (proveedor de inteligencia artificial del Asistente, París, Francia): recibe tu pregunta, ya sin identificadores, y las fichas informativas relacionadas, para redactar la respuesta. No le enviamos tu NIF, tu nombre, tu correo ni tu posición. Según su política, no conserva el contenido de las preguntas ni lo usa para entrenar modelos; solo guarda temporalmente, hasta dos semanas, las peticiones que fallan o parecen maliciosas, para investigar el problema. Te pedimos que no escribas datos personales en tus preguntas.</li>
+  <li><strong>Atlassian</strong> (Confluence, herramienta interna de documentación): las preguntas que el Asistente no ha sabido contestar o que has marcado como incorrectas se copian, sin identificadores y sin ningún dato de tu cuenta, a nuestro espacio de Confluence, donde revisamos y escribimos las fichas. Se conservan allí como máximo 90 días y, si borras tus preguntas o tu cuenta, desaparecen en unas horas. Atlassian puede tratar estos datos fuera del Espacio Económico Europeo con las cláusulas contractuales tipo de la Comisión Europea incluidas en su acuerdo de tratamiento de datos.</li>
+</ul>
+<p>Google y Apple pueden tratar datos fuera del Espacio Económico Europeo con las garantías que establecen sus propios términos. No vendemos ni cedemos datos a terceros con fines comerciales, y solo comunicaremos datos a las autoridades cuando una ley nos obligue.</p>
 
-<h2>9. Seguridad</h2>
-<p>Aplicamos cifrado en tránsito (TLS) para todas las comunicaciones y cifrado en reposo (AES-GCM) para el NIF/NIE almacenado. El acceso al backend está restringido y auditado.</p>
+<h2>8. Cuánto tiempo conservamos los datos</h2>
+<ul>
+  <li><strong>Tu cuenta y tus datos</strong>: mientras mantengas la cuenta. Puedes borrarla cuando quieras desde Ajustes → Privacidad → Borrar mi cuenta, y se borra todo del servidor en el acto, sin periodo de recuperación. Tienes los pasos, también para hacerlo sin la App, en <a href="https://pulchradev.github.io/bolsin-privacidad/eliminar-cuenta/">Borrar tu cuenta de Bolsín</a>.</li>
+  <li><strong>Tu perfil</strong>: si lo eliminas sin borrar la cuenta, lo guardamos 30 días por si vuelves a añadir el mismo NIF; después se borra del servidor.</li>
+  <li><strong>Historial</strong>: mientras tengas la cuenta. La versión gratuita muestra los últimos 30 días, aunque el dato se conserva por si activas Premium.</li>
+  <li><strong>Preguntas al Asistente</strong>: hasta que las borres desde Ajustes → Asistente o borres tu cuenta. Si borras solo las preguntas, conservamos contadores sin contenido (fecha, palabras procesadas y coste) para el límite diario y el control de costes; si borras la cuenta, también se borran.</li>
+  <li><strong>Registros técnicos del servidor</strong>: como máximo 14 días.</li>
+  <li><strong>Copias de seguridad</strong>: diarias, se guardan 14 días. Lo que borras desaparece de ellas cuando caducan, y si alguna vez tuviéramos que restaurar una, volveríamos a aplicar los borrados.</li>
+  <li><strong>Listados oficiales</strong>: los seis últimos cursos (apartado 5).</li>
+</ul>
 
-<h2>10. Menores de edad</h2>
-<p>La App no está dirigida a menores de 16 años y no recogemos intencionadamente datos de menores de esa edad.</p>
+<h2>9. Tus derechos</h2>
+<p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad, y retirar tu consentimiento en cualquier momento sin que afecte a lo tratado antes, escribiendo a <a href="mailto:pulchradev@gmail.com">pulchradev@gmail.com</a>. Te contestaremos en el plazo de un mes. También puedes borrar tu cuenta directamente desde la App. Si consideras que no hemos atendido bien tu solicitud, puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener">aepd.es</a>).</p>
 
-<h2>11. Cambios en esta política</h2>
-<p>Si actualizamos esta política de forma relevante, te lo notificaremos dentro de la App antes de que el cambio entre en vigor.</p>
+<h2>10. Seguridad</h2>
+<p>Todas las comunicaciones van cifradas (TLS 1.2 o superior). El NIF se guarda cifrado y no aparece en los registros del sistema. La base de datos no es accesible desde Internet y solo el responsable tiene acceso al servidor. De los listados oficiales no guardamos nombres.</p>
 
-<h2>12. Contacto</h2>
+<h2>11. Comunicaciones comerciales</h2>
+<p>Solo enviamos comunicaciones comerciales por correo electrónico a quien lo haya solicitado o autorizado previamente, y siempre con una forma sencilla de darse de baja. Si quieres dejar de recibir cualquier comunicación nuestra, escribe a <a href="mailto:pulchradev@gmail.com">pulchradev@gmail.com</a>.</p>
+
+<h2>12. Menores de edad</h2>
+<p>La App está dirigida a profesionales de la educación mayores de edad y no recogemos intencionadamente datos de menores.</p>
+
+<h2>13. Cambios en esta política</h2>
+<p>Publicamos aquí cada versión con su fecha. Si un cambio es relevante, lo avisamos en la App antes de que entre en vigor.</p>
+
+<h2>14. Contacto</h2>
 <p><a href="mailto:pulchradev@gmail.com">pulchradev@gmail.com</a></p>
 
 </body>
